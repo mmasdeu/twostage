@@ -112,7 +112,7 @@ class Region(SageObject):
         self._center = center
         radius = abs(radius)
         if radius > 1:
-            raise RuntimeError("Radius (=%s) should be always < 1. Center = %s"%(radius, center)))
+            raise RuntimeError("Radius (=%s) should be always < 1. Center = %s"%(radius, center))
         self._radius = radius
 
     def radius(self):
