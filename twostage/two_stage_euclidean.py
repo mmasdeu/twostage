@@ -14,10 +14,10 @@ from sage.rings.all import IntegerRing
 from sage.rings.all import RationalField
 from collections import deque
 from collections import namedtuple
-from sage.plot import plot
-from sage.plot import polygon
-from sage.plot import point
-from itertools import count, izip
+from sage.plot.plot import plot
+from sage.plot.plot import polygon
+from sage.plot.plot import point
+from itertools import count, izip, product
 
 class Regions(SageObject):
     def __init__(self,parent):

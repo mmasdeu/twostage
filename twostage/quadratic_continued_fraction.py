@@ -1,4 +1,4 @@
-##########################################
+9##########################################
 #                                        #
 # Added by mmasdeu                       #
 # Authors: Xevi Guitart and Marc Masdeu  #
@@ -14,9 +14,9 @@ from sage.rings.all import IntegerRing
 from sage.rings.all import RationalField
 from collections import deque
 from collections import namedtuple
-from sage.plot import plot
-from sage.plot import polygon
-from sage.plot import point
+from sage.plot.plot import plot
+from sage.plot.plot import polygon
+from sage.plot.plot import point
 from itertools import count, izip
 from two_stage_euclidean import *
 
@@ -66,7 +66,7 @@ def quadratic_continued_fraction(F, xx, Nbound = 50, Tbound = 5, optimize_for_le
 
     EXAMPLES::
 
-        sage: from quadratic_continued_fraction import *
+        sage: from twostage.quadratic_continued_fraction import *
         sage: K.<a> = QuadraticField(53)
         sage: x = 18/5*a + 2/5
         sage: v = quadratic_continued_fraction(K, x)
