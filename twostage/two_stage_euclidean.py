@@ -387,7 +387,7 @@ class QuadraticContinuedFraction(SageObject):
                 self._minholes = len(holes)
                 percent = RealField(prec=20)(0)
         if verify:
-            if ! self.verify():
+            if !self.verify():
                 raise RuntimeError("The result seems not to be correct. Verification failed.")
         self._solved = True
         return [self._disc, self._maxdepth, 1 + max([abs(self._F(reg[1][1]).norm()) for reg in self._used_regions]),len(self._used_regions),self._used_regions]
