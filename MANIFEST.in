@@ -1,0 +1,4 @@
+prune twostage
+include VERSION
+include twostage/*.py
+
