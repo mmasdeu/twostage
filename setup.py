@@ -49,7 +49,7 @@ if __name__ == "__main__":
         name = "twostage",
         version = readfile("VERSION"), # the VERSION file is shared with the documentation
         description='Algorithms for proving that class-number-one real quadratic fields are 2-stage euclidean, and to find continued fraction expansions in them.',
-        long_description = readfile("README.md"), # get the long description from the README
+        long_description = readfile("README.rst"), # get the long description from the README
         url='https://github.com/mmasdeu/twostage',
         author='Xavier Guitart, Marc Masdeu',
         author_email='marc.masdeu@gmail.com', # choose a main contact email
