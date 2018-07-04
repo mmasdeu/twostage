@@ -222,7 +222,7 @@ def all_quadratic_continued_fractions_up_to_length(F, xx,max_length=4,Nbound=50,
     while work_to_do:
         work_to_do = False
         newV = []
-        print "(%s)"%len(V),
+        print("(%s)" % len(V), end=" ")
         sys.stdout.flush()
         for ans, knm1, kn, done in V:
             if not done and get_img_part(ans) > threshold:
