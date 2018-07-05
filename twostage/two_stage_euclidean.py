@@ -339,8 +339,8 @@ class QuadraticContinuedFraction(SageObject):
             h = holes.popleft()
             result = self.evaluate_hole(h,verifying=True,maxdepth=maxdepth)
             if result == -2:
-                print "The solution is incorrect."
-                print "The ",h," is not covered by any region."
+                print("The solution is incorrect.")
+                print("The {} is not covered by any region.".format(h))
                 return False
             if result == -1:
                 xh = (h.xmax+h.xmin)/2
