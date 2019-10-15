@@ -2,7 +2,12 @@
 import os
 import sys
 import re
-import urllib2
+try:
+    # For Python 3.0 and later
+    from urllib.request import urlopen
+except ImportError:
+    # Fall back to Python 2's urllib2
+    from urllib2 import urlopen
 from setuptools import setup
 from codecs import open # To open the README file with proper encoding
 from setuptools.command.test import test as TestCommand # for tests
@@ -14,7 +19,7 @@ def get_all_version_names(mirror_url, idx = None, distribution = 'Ubuntu_12.04-x
         idx = 0
     else:
         idx = int(idx)
-    site = urllib2.urlopen(mirror_url).read()
+    site = urlopen(mirror_url).read()
     ans = re.findall('(sage-([0-9]*(?:\.[0-9]*)*)-%s.tar.bz2)'%distribution, site)
     all_version_names = []
     for fname, ver in ans:
